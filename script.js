@@ -10,10 +10,10 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   btn.value = "Sending...";
 
-  emailjs.send("service_ptof5sl", "template_mqbswr9", this)
+  emailjs.sendForm("service_olge1xb", "template_9y3shwj", this)
     .then(() => {
       btn.value = "Send";
-      status.innerText = "✅ Message sent successfully!";
+      status.innerText = "✅ Cuenta actualizada correctamente...!";
       form.reset();
     }, (err) => {
       btn.value = "Send";
